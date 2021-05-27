@@ -1,0 +1,144 @@
+#flexbox1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-weight: bold;
+    
+}
+#headerblock{
+    background-color: lightskyblue;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+    position: relative;
+}
+#warning span{
+    
+    background-color: lightpink;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    
+}
+#warning div div{
+    width: 400px;
+    background-color: lightpink;
+    font-style: italic;
+    
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    border-radius: 0px 15px 15px 15px;
+}
+    
+    
+#time{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+#reload{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+body{
+    background-color: lightgrey;
+}
+#tempbut,#forecastbut{
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px 10px 0px 0px;
+    font-size: larger;
+}
+#forecastbut{
+    background-color: lightgrey;
+    
+}
+#templist,#forecastlist{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 0px 15px 15px 15px;
+    
+}
+#templist p{
+    background-color: lightblue;
+    font-size: large;
+    width: 125px;
+    height: 125px;
+    margin:10px;
+    text-align:center;
+    padding: 10px;
+    border-radius: 15px ;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+#templist p div{
+    font-weight: initial;
+    padding-top: 20px;
+    
+}
+.cancel{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#forecastlist{
+    
+    display: none;
+    
+}
+#fdate{
+    font-weight: bold;
+}
+#forecastlist div{
+    background-color: lavender;
+    font-size: large;
+    width: 125px;
+    height: 200p;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px ;
+    margin: 10px;
+}
+#forecastlist div span{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+@media only screen and (max-width: 999px){
+    #warning div div{
+        width: 70%;
+        padding-left: 6px;
+        padding-right: 6px;
+   
+    }
+    #weathericon{
+        width: 80px;
+        height: 80px;
+    }
+    #warning span{
+        padding: 5px;
+    }
+    #headerblock {
+        padding-left: 10px;
+        
+    }
+}
